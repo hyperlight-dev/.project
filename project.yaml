@@ -1,0 +1,69 @@
+# .project metadata for Hyperlight
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+# TODO: Add adopters list (ADOPTERS.md)
+# TODO: Add package_managers if distributed via registries
+
+schema_version: "1.0.0"
+slug: "hyperlight"
+name: "Hyperlight"
+description: "A lightweight, secure container runtime solution designed for modern cloud-native workloads"
+type: "project"
+project_lead: "danbugs" # TODO: AUTO-DETECTED — please verify
+slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
+  - name: "#hyperlight"
+    primary: true
+
+maturity_log:
+  - phase: "sandbox"
+    date: "2025-03-04T00:00:00Z"
+    issue: "https://github.com/cncf/sandbox/issues/312" # TODO: AUTO-DETECTED — please verify
+
+repositories:
+  - "https://github.com/hyperlight-dev/hyperlight"
+
+website: "https://github.com/hyperlight-dev/hyperlight"
+
+artwork: "https://landscape.cncf.io/logos/hyperlight.svg"
+
+# TODO: Add ADOPTERS.md if your project tracks adopters
+# adopters:
+#   path: "https://github.com/hyperlight-dev/hyperlight/blob/main/ADOPTERS.md"
+
+
+# TODO: Add package manager identifiers if your project is distributed via registries
+# package_managers:
+#   docker: "hyperlight-dev/hyperlight"
+
+
+security:
+  policy:
+    path: "https://github.com/hyperlight-dev/hyperlight/blob/main/SECURITY.md"
+  contact:
+    advisory_url: "https://github.com/hyperlight-dev/hyperlight/security/advisories/new"
+
+governance:
+  contributing:
+    path: "https://github.com/hyperlight-dev/hyperlight/blob/main/CONTRIBUTING.md"
+  code_of_conduct:
+    path: "https://github.com/hyperlight-dev/hyperlight/blob/main/CODE_OF_CONDUCT.md"
+
+legal:
+  license:
+    path: "https://github.com/hyperlight-dev/hyperlight/blob/main/LICENSE.txt"
+  identity_type:
+    has_dco: true # AUTO-DETECTED — please verify
+    has_cla: false # AUTO-DETECTED — please verify
+    dco_url:
+      path: "https://developercertificate.org/"
+
+documentation:
+  readme:
+    path: "https://github.com/hyperlight-dev/hyperlight/blob/main/README.md"
+
+landscape:
+  category: "Runtime"
+  subcategory: "Container Runtime"
+
+# CLOMonitor Score: 73/100
+# Documentation: 90 | License: 100 | Best Practices: 42 | Security: 68
