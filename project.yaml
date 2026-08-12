@@ -1,40 +1,72 @@
 # .project metadata for Hyperlight
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
-# TODO: Add adopters list (ADOPTERS.md)
-# TODO: Add package_managers if distributed via registries
-
 schema_version: "1.0.0"
 slug: "hyperlight"
 name: "Hyperlight"
 description: "A lightweight, secure container runtime solution designed for modern cloud-native workloads"
 type: "project"
-project_lead: "danbugs" # TODO: AUTO-DETECTED — please verify
-slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
+slack_channels:
   - name: "#hyperlight"
     primary: true
 
 maturity_log:
   - phase: "sandbox"
     date: "2025-03-04T00:00:00Z"
-    issue: "https://github.com/cncf/sandbox/issues/312" # TODO: AUTO-DETECTED — please verify
+    issue: "https://github.com/cncf/sandbox/issues/312"
 
 repositories:
   - "https://github.com/hyperlight-dev/hyperlight"
 
 website: "https://github.com/hyperlight-dev/hyperlight"
 
+# TODO
+# adopters:
+#  path: "https://github.com/hyperlight-dev/hyperlight/blob/main/ADOPTERS.md"
+
 artwork: "https://landscape.cncf.io/logos/hyperlight.svg"
 
-# TODO: Add ADOPTERS.md if your project tracks adopters
-# adopters:
-#   path: "https://github.com/hyperlight-dev/hyperlight/blob/main/ADOPTERS.md"
-
-
-# TODO: Add package manager identifiers if your project is distributed via registries
-# package_managers:
-#   docker: "hyperlight-dev/hyperlight"
-
+package_managers:
+  cargo:
+    # core
+    - "hyperlight-common"
+    - "hyperlight-component-macro"
+    - "hyperlight-component-util"
+    - "hyperlight-guest"
+    - "hyperlight-guest-bin"
+    - "hyperlight-guest-macro"
+    - "hyperlight-guest-tracing"
+    - "hyperlight-host"
+    - "hyperlight-libc"
+    - "cargo-hyperlight"
+    # sub projects
+    - "hyperlight-wasm"
+    - "hyperlight-wasm-aot"
+    - "hyperlight-wasm-macro"
+    - "hyperlight-wasm-runtime"
+    - "hyperlight-js"
+    - "hyperlight-js-common"
+    - "hyperlight-js-runtime"
+    - "hyperlight-unikraft"
+    - "pyhl"
+  nuget:
+    - "Hyperlight.HyperlightSandbox.PInvoke"
+    - "Hyperlight.HyperlightSandbox.Api"
+    - "Hyperlight.HyperlightSandbox.Guest.Python"
+    - "Hyperlight.HyperlightSandbox.Extensions.AI"
+    - "Hyperlight.HyperlightSandbox.Guest.JavaScript"
+  npm:
+    - "@hyperlight-dev/hyperagent"
+    - "@hyperlight-dev/js-host-api"
+    - "@hyperlight-dev/js-host-api-linux-x64-gnu"
+    - "@hyperlight-dev/js-host-api-linux-x64-musl"
+    - "@hyperlight-dev/js-host-api-win32-x64-msvc"
+  pypi:
+    - "hyperlight-sandbox"
+    - "hyperlight-sandbox-backend-hyperlight-js"
+    - "hyperlight-sandbox-backend-wasm"
+    - "hyperlight-sandbox-javascript-guest"
+    - "hyperlight-sandbox-python-guest"
 
 security:
   policy:
@@ -52,8 +84,8 @@ legal:
   license:
     path: "https://github.com/hyperlight-dev/hyperlight/blob/main/LICENSE.txt"
   identity_type:
-    has_dco: true # AUTO-DETECTED — please verify
-    has_cla: false # AUTO-DETECTED — please verify
+    has_dco: true
+    has_cla: false
     dco_url:
       path: "https://developercertificate.org/"
 
