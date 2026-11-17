@@ -24,7 +24,7 @@ repositories:
 
 website: "https://github.com/hyperlight-dev/hyperlight"
 
-artwork: "https://landscape.cncf.io/logos/hyperlight.svg"
+artwork: "https://github.com/cncf/artwork/tree/main/projects/hyperlight"
 
 # TODO: Add ADOPTERS.md if your project tracks adopters
 # adopters:
